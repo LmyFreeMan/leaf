@@ -1,0 +1,52 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Contentid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-contentid" data-rule="required" class="form-control" name="row[contentid]" type="text" value="{$row.contentid}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Content')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-content" data-rule="required" class="form-control" name="row[content]" type="text" value="{$row.content}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Commenter')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-commenter" data-rule="required" class="form-control" name="row[commenter]" type="text" value="{$row.commenter}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Commentschoolnum')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-commentschoolnum" data-rule="required" class="form-control" name="row[commentschoolnum]" type="text" value="{$row.commentschoolnum}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Isshow')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-isshow" data-rule="required" class="form-control" name="row[isshow]" type="text" value="{$row.isshow}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Commentcontent')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-commentcontent" data-rule="required" class="form-control" name="row[commentcontent]" type="text" value="{$row.commentcontent}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('T')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-t" data-rule="required" class="form-control" name="row[t]" type="text" value="{$row.t}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

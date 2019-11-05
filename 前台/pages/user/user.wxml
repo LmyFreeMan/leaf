@@ -1,0 +1,54 @@
+<view class='userBox'>
+  <!--top-->
+  <view class='top'>
+    <image class='ico' src='/res/ico/white.png' />
+    <image class='logo' src='/res/img/logoa.png' />
+    <image class='ico' src='/res/ico/white.png' />
+  </view>
+  <!--userCard-->
+  <view class='userCard'>
+    <view class='abox-name'>
+      <view class='avatarBox'>
+        <open-data class="avatar" type="userAvatarUrl" />
+      </view>
+      <view class='userid' bindtap='avatar'>{{name}}</view>
+    </view>
+    <view class='xh' bindtap='avatar'>{{schoolnum}}</view>
+    <view class='abox-cnt'>
+      <view class='joinDays'>
+        <text>{{t}}</text>天
+        <view>您已加入木叶汇华</view>
+      </view>
+      <view class='logoa'>
+        <image src='/res/img/logoa.png' />
+      </view>
+    </view>
+  </view>
+  <!--userList-->
+  <view class='userList'>
+    <i-cell-group>
+      <i-cell is-link url="/pages/core/userCtr/userCtr">
+        <i-icon type="mine" size="27" color="black" /> 个人中心
+      </i-cell>
+      <i-cell is-link url="/pages/core/msg/msg">
+        <i-icon type="message" size="27" color="black" /> 消息中心
+      </i-cell>
+      <i-cell is-link url="/pages/core/help/help">
+        <i-icon type="activity" size="27" color="black" /> 使用帮助
+      </i-cell>
+      <i-cell bindtap='pay'>
+        <i-icon type="praise" size="27" color="black" /> 支持Leaf+
+      </i-cell>
+      <i-cell bindtap='copy'>
+        <i-icon type="group" size="27" color="black" /> 加入交流群
+      </i-cell>
+      <i-cell is-link url="/pages/core/about/about">
+        <i-icon type="prompt" size="27" color="black" /> 关于Leaf+
+      </i-cell>
+    </i-cell-group>
+  </view>
+  <i-button type="primary" size="default" open-type='share'>
+    <i-icon type="share" size="22" color="white" /> 分享Leaf+</i-button>
+  <!-- <i-button type="error" size="default">
+    <i-icon type="undo" size="22" color="white" /> 退出登录</i-button> -->
+</view>

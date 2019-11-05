@@ -1,0 +1,147 @@
+/* create.wxss */
+
+.createTop {
+  height: 240rpx;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 24rpx;
+  letter-spacing: 10rpx;
+}
+
+.btn1 {
+  width: 80%;
+  margin-top: 20rpx;
+  background-color: #0072ff;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnBox {
+  margin: 20rpx 0;
+}
+
+.btn2 {
+  background-color: white;
+  font-size: 32rpx;
+  border-radius: 0;
+  height: 80rpx;
+}
+
+.btn2::after {
+  border: 0;
+}
+
+.icon {
+  padding: 20rpx;
+}
+
+.createTopTitle {
+  font-size: 36rpx;
+  letter-spacing: 10rpx;
+}
+
+.bot {
+  border-top: 0.1ch solid #636e72;
+  bottom: 0;
+  width: 100%;
+  font-style: italic;
+  color: white;
+  background-color: #0072ff;
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
+}
+
+.picker {
+  display: flex;
+  width: 750rpx;
+  height: 40rpx;
+  padding: 40rpx;
+  margin: 20rpx 0;
+  background-color: white;
+}
+
+.pType {
+  display: flex;
+  width: 750rpx;
+  height: 40rpx;
+}
+
+.pType image {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.tLabel {
+  display: inline-block;
+  width: 85%;
+}
+
+.tIco {
+  display: inline-block;
+  width: 15%;
+}
+
+.tLabel {
+  font-size: 28rpx;
+  color: #0f1423;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  width: 750rpx;
+  height: 320rpx;
+  background-color: white;
+  font-size: 32rpx;
+}
+
+.textBox textarea {
+  padding: 20rpx 20rpx 0 40rpx;
+}
+
+.textBox text {
+  text-align: right;
+  color: rgb(147, 147, 147);
+  padding-right: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.question-images-area {
+  padding: 40rpx 0;
+}
+
+.question-images-tool {
+  display: flex;
+  align-items: center;
+}
+
+.question-images {
+  display: flex;
+  align-items: center;
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+}
+
+.q-image-wrap {
+  width: 31%;
+  margin-right: 10rpx;
+}
+
+.q-image {
+  flex: 1;
+  height: 200rpx;
+  width: 100%;
+}
+
+.q-image-remover {
+  text-align: center;
+  font-size: 32rpx;
+}

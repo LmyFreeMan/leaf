@@ -1,0 +1,147 @@
+/*comment.wxss*/
+
+.commentBox {
+  display: flex;
+  flex-flow: column;
+}
+
+swiper {
+  width: 700rpx;
+  height: 400rpx;
+}
+
+swiper image {
+  width: 100%;
+  height: 400rpx;
+}
+
+.scroll-view {
+  margin: 30rpx 30rpx 0 30rpx;
+  border-radius: 10rpx;
+  box-shadow: 0rpx 5rpx 70rpx -10rpx #636e72;
+}
+
+.detail {
+  display: flex;
+  flex-flow: column;
+  width: 700rpx;
+  margin: 30rpx 30rpx 20rpx 30rpx;
+  border-radius: 10rpx;
+  line-height: 200%;
+  font-size: 32rpx;
+  box-shadow: 0rpx 5rpx 70rpx -10rpx #636e72;
+}
+
+.hint-content {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.ellipsis {
+  -webkit-line-clamp: 3; /* 最多显示3行*/
+  opacity: 0; /* 透明度0*/
+}
+
+.unellipsis {
+  -webkit-line-clamp: 0; /* 全部显示*/
+  opacity: 1; /* 不透明*/
+}
+
+.bg-ellipsis {
+  height: 65rpx;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.img-ellipsis {
+  width: 60rpx;
+  height: 60rpx;
+  padding-bottom: 20rpx;
+}
+
+.detail text {
+  color: white;
+  font-size: 36rpx;
+  line-height: 2rem;
+  text-align: left;
+  padding: 50rpx 100rpx 0 100rpx;
+}
+
+#userid {
+  font-size: 28rpx;
+  text-align: right;
+  padding-right: 80rpx;
+}
+
+.commentList {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  margin: 20rpx 30rpx 0 30rpx;
+  font-size: 36rpx;
+  height: 200rpx;
+}
+
+.commentList text {
+  padding: 40rpx 0 20rpx 70rpx;
+}
+
+.commentList image {
+  width: 38rpx;
+  height: 38rpx;
+}
+
+#cmtid {
+  font-size: 28rpx;
+  padding-left: 10rpx;
+  font-weight: 500;
+  /* 控制宽度 */
+  width: 200rpx;
+  max-width: 200rpx;
+  /* 控制显示的行数 */
+  max-height: 150rpx;
+  line-height: 50rpx;
+  /* 显示多行 */
+  display: -webkit-box;
+  overflow: hidden;
+  /* 1为显示的行数 */
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.icoBox {
+  display: flex;
+  flex-flow: row;
+  padding: 20rpx 0 20rpx 480rpx;
+}
+
+.sendBox {
+  position: fixed;
+  bottom: 0;
+  padding-left: 70rpx;
+  background-color: white;
+  height: 100rpx;
+  width: 750rpx;
+  border-top: 1px solid #636e72;
+}
+
+.sendComment {
+  display: flex;
+  flex-flow: row;
+  padding-top: 20rpx;
+  font-size: 30rpx;
+}
+
+.sendBtn {
+  border-radius: 98rpx;
+  background-color: rgb(72, 147, 214);
+  padding-left: 90rpx;
+  color: white;
+}
+
+.line {
+  height: 120rpx;
+}
